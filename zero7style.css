@@ -91,6 +91,7 @@ p {
     display: block;
     width: calc(100% + 1.3px);
     height: 47px;
+    bottom: 1px;
 }
 
 .custom-curve-green .shape-fill {
