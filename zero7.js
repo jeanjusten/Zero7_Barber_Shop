@@ -87,7 +87,7 @@ const customMsgContact = `?&text=Olá.%20Gostaria%20de%20agendar%20um%20horário
 
 // Apply the custom API call to DOM
 // Home Page contact button
-whatsappAPI("btn-schedule", customMsgContact);
+//whatsappAPI("btn-schedule", customMsgContact);
 // Hair cut Button
 whatsappAPI("btn-haircut", customMsgHair);
 // Beard cut Button

@@ -3,6 +3,7 @@
 <!--HEAD-->
 <head>
     <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZERO7 Barbearia</title>
     <link rel="stylesheet" href="Lib/bootstrap.min.css">
@@ -61,14 +62,31 @@
         <div class="text-overlay">
             <h3 class="h1-header-prim mt-3">SEJA BEM-VINDO À</h3>
             <img src="./images/zero7_logo_white.png" draggable="false" class="img-fluid main-logo">
-            <p id="p-main">Garanta seu corte com estilo. Reserve agora seu horário.</p>
-            <a href="#more-info" class="btn btn-primary btn-color border-0 btn-lg rounded-pill" id="btn-schedule">Agendar</a>
+            <p id="p-main">Garanta seu corte com <strong>estilo</strong>.</p>
+            <!--<a href="#more-info" class="btn btn-primary btn-color border-0 btn-lg rounded-pill" id="btn-schedule">Agendar</a>-->
         </div>
     </div>
+    <!--Curved Section-->
+    <section class="green-curve-z">
+        <div class="custom-curve-green">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
 
     <!--ABOUT SECTION-->
     <section id="about">
-        <h2 class="h2 mx-0 mt-5 d-flex justify-content-center" id="about-h1">Sobre Nós</h2>
+        <!--Section Icon-->
+        <div class="icon-about text text-center mx-0">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-question-diamond mb-1" viewBox="0 0 16 16">
+                    <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                </svg>
+            </span>
+        </div>
+        <h2 class="h2 mx-0 mt-0 d-flex justify-content-center" id="about-h1">Sobre a Zero7</h2>
         <div id="carousel-images" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-inner" id="carousel-about">
                 <div data-bs-interval="4500" class="carousel-item active">
@@ -95,28 +113,45 @@
                 <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="4"></button>
             </div>
         </div>
-        <div class="container d-block justify-content-center mt-3">
+        <div class="container d-block justify-content-center mt-3  mb-2">
             <p class="text text-center paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab reiciendis voluptas repellat nisi odio commodi et saepe, quos, labore est dignissimos. Praesentium dolores numquam aut nisi officiis doloribus sapiente aliquid?
+                <br>
+                    Nós somos a Zero7 Barbearia. Atuamos em duas unidades em <strong>São Mateus do Sul-PR</strong>. Nós trabalhamos com técnicas atualizadas e 
+                produtos de qualidade para oferecer uma experiência única em cortes de cabelo e barba. <br><br>
+                    Nosso objetivo é garantir que cada cliente saia não apenas com um visual impecável, mas também com a confiança renovada.
             </p>
+        </div>
+    </section>
+    <!--Curved Section-->
+    <section class="green-curve">
+        <div class="custom-curve-green">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
         </div>
     </section>
 
     <!--SERVICES SECTION-->
     <section id="services">
-        <h2 class="h2 mx-0 mt-5 d-flex justify-content-center" id="services-h1">Nossos Serviços</h2>
+        <!--Section Icon-->
+        <div class="icon-about text text-center mx-0">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#26442E" class="bi bi-scissors" viewBox="0 0 16 16">
+                    <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                </svg>
+            </span>
+        </div>
+        <h2 class="h2 mx-0 mt-1 mb-3 d-flex justify-content-center" id="services-h1">Nossos Serviços</h2>
         <div class="container">
             <div class="row d-lg-flex d-xl-flex mb-3 justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-5" >
                     <article class="card card-plan pb-3 card-shadow">
                         <header class="card-header card-header-top">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
-                                <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
-                            </svg> CABELO
+                            CABELO
                         </header>
                         <div class="card-body">
                             <div class="icon-container-services">
-                                <img src="./images/scissors_icon.png" id="icon-scissors"/>
+                                <img src="./images/scissors_icon.png" draggable="false" id="icon-scissors"/>
                             </div>
                             <span class="plan-desc">R$ <span class="plan-value" id="cost-haircut">40,00</span></span>
                             <!--<p class="card-text card-info">*</p>-->
@@ -137,13 +172,11 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-5" >
                     <article class="card card-plan pb-3 card-shadow">
                         <header class="card-header card-header-top">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
-                                <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0m7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
-                            </svg> BARBA
+                            BARBA
                         </header>
                         <div class="card-body">
                             <div class="icon-container-services">
-                                <img src="./images/moustache_icon.png" id="icon-beard"/>
+                                <img src="./images/moustache_icon.png" draggable="false" id="icon-beard"/>
                             </div>
                             <span class="plan-desc">R$ <span class="plan-value" id="cost-beard">40,00</span></span>
                             <!--<p class="card-text card-info">*</p>-->
@@ -163,11 +196,27 @@
             </div>
         </div>
     </section>
+    <!--Curved Section-->
+    <section class="black-curve mb-1">
+        <div class="custom-curve-black">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
 
     <!--TEAM SECTION-->
     <section id="team">
+        <!--Section Icon-->
+        <div class="icon-about text text-center mx-0">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-people mb-1" viewBox="0 0 16 16">
+                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                </svg>
+            </span>
+        </div>
         <div class="container d-block justify-content-center">
-            <h2 class="h2 mx-0 mt-5 d-flex justify-content-center" id="team-h1">Nossa Equipe</h2>
+            <h2 class="h2 mx-0 mt-0 d-flex justify-content-center" id="team-h1">Nossa Equipe</h2>
             <p class="text text-center paragraph">
                 Conheça os talentosos membros da equipe Zero7.
             </p>
@@ -762,11 +811,28 @@
             </button>
         </div>
     </section>
+    <!--Curved Section-->
+    <section class="green-curve">
+        <div class="custom-curve-green">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
 
     <!--PLANS SECTION-->
-    <section id="plans" style="margin-bottom: 3rem;">
+    <section id="plans">
+        <!--Section Icon-->
+        <div class="icon-about text text-center mx-0">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#26442E" class="bi bi-card-checklist mb-1" viewBox="0 0 16 16">
+                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                    <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                </svg>
+            </span>
+        </div>
         <div class="container d-block justify-content-center">
-            <h2 class="h2 mx-0 mt-5 d-flex justify-content-center">Nossos Planos</h2>
+            <h2 class="h2 mx-0 mt-0 d-flex justify-content-center">Nossos Planos</h2>
             <p class="text text-center paragraph">
                 Conheça nossos planos de corte personalizados para manter-se sempre impecável.
                 Escolha o plano que melhor se adapta ao seu estilo e aproveite da praticidade que oferecemos.
@@ -937,11 +1003,29 @@
                 </div>
             </div>
     </section>
+    <!--Curved Section-->
+    <section class="black-curve mb-1">
+        <div class="custom-curve-black2">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
 
     <!--WORKSHOPS SECTION-->
     <section id="workshop">
+        <!--Section Icon-->
+        <div class="icon-about text text-center mx-0">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-vector-pen mb-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/>
+                    <path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086z"/>
+                </svg>
+            </span>
+        </div>
+
         <div class="container d-block justify-content-center">
-            <h2 class="h2 mx-0 mt-5 d-flex justify-content-center" id="team-h1">Workshops</h2>
+            <h2 class="h2 mx-0 mt-0 d-flex justify-content-center" id="workshops-h1">Workshops</h2>
             <p class="text text-center paragraph">
                 A Zero7 também oferece Workshops para barbeiros. Com as 16 aulas do nosso curso você não aprenderá apenas tudo sobre cortes, 
                 mas também sobre como manejar seu set de máquinas, fidelizar clientes, abordagem e atendimento e muito mais! 
@@ -962,8 +1046,8 @@
                             </div>
                             <span class="plan-desc d-block text-center mt-3">R$ <span class="plan-value" id="cost-workshop">1997,00</span></span>
                             <p class="card-text card-info text-center">*Em até 12x sem juros no cartão.</p>
-                            <a href="#" class="btn btn-primary w-100 btn-plano mt-3" id="btn-workshop">Saiba mais</a>
-                            <div class="button-footer my-2 footer-info text-center">Sujeito à disponibilidade da Zero7</div>
+                            <a href="#" class="btn btn-primary w-100 btn-plano mt-0" id="btn-workshop">Saiba mais</a>
+                            <div class="button-footer my-2 footer-info text-center">Consulte a disponibilidade da Zero7</div>
                         </div>
                     </article>
                 </div>

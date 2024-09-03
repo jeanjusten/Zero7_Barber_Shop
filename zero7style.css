@@ -30,14 +30,14 @@
     scrollbar-width: thin; 
     scrollbar-color: var(--color-scroll) var(--color-scroll-bg);
     scroll-behavior: smooth;
-    scroll-padding-top: 40px;
+    scroll-padding-top: 90px;
 }
 
 /*----------------------------*/
 /*GENERAL SETUP*/
 /*----------------------------*/
 body {
-    background-color: var(--color-body) !important;
+    background-color: var(--color-primary) !important;
 }
 
 h5 {
@@ -46,7 +46,6 @@ h5 {
 
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.2rem !important;
 }
 
 /*----------------------------*/
@@ -64,6 +63,76 @@ p {
     background-color: var(--color-primary); 
     border-radius: 6px; 
     border: 3px solid #f1f1f1; 
+}
+
+/*----------------------------*/
+/*SECTIONS CURVES*/
+/*----------------------------*/
+.green-curve-z {
+    position: relative;
+    z-index: 25;
+    top: -46px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.green-curve {
+    background-color: var(--color-background);
+}
+
+.custom-curve-green {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-curve-green svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 47px;
+}
+
+.custom-curve-green .shape-fill {
+    fill: var(--color-primary);
+}
+
+.black-curve {
+    background-color: var(--color-background);
+}
+
+.custom-curve-black {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-curve-black svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 47px;
+}
+
+.custom-curve-black .shape-fill {
+    fill: var(--color-primary);
+}
+
+.custom-curve-black2 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-curve-black2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-curve-black2 .shape-fill {
+    fill: var(--color-primary);
 }
 
 /*----------------------------*/
@@ -119,13 +188,37 @@ p {
 /*MEDIA QUERIES*/
 /*----------------------------*/
 @media (max-width: 320px) {
+    #cost-workshop {
+        font-size: 1.3rem !important;
+    }
+
+    #about-h1 {
+        font-size: 1.8rem !important; 
+    }
+    
+    #services-h1 {
+        font-size: 1.8rem !important; 
+    }
+    
+    #plans-h1 {
+        font-size: 1.8rem !important; 
+    }
+    
+    #team-h1 {
+        font-size: 1.8rem !important; 
+    }
+    
+    #workshops-h1 {
+        font-size: 1.8rem !important; 
+    }
+
     #btn-schedule {
         font-size: 0.6rem !important;
         margin-top: 0.5rem !important;
     }
 
     .paragraph {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
     }
 
     #p-main {
@@ -133,18 +226,18 @@ p {
     }
 
     .h2 {
-        font-size: 0.1rem !important;
+        font-size: 1.8rem !important;
     }
 }
 
 /* Responsive Media Query */
-@media (max-width: 576px) {
-    .navbar-brand {
-        font-size: 1.2rem;
+@media (min-width: 321px) and (max-width: 576px) {
+    #cost-workshop {
+        font-size: 1.9rem !important;
     }
 
-    .paragraph {
-        font-size: 1.2rem !important;
+    .navbar-brand {
+        font-size: 1.2rem;
     }
 
     .btn-color {
@@ -171,9 +264,13 @@ p {
     .h2 {
         font-size: 2rem !important;
     }
+
+    .paragraph {
+        font-size: 1rem !important;
+    }
 }
 
-@media (max-width: 720px) {
+@media (min-width: 577px) and (max-width: 720px) {
     .btn-color {
         font-size: 1rem;
     }
@@ -183,9 +280,25 @@ p {
     }
 }
 
-@media (max-width: 810px) {
+@media (min-width: 721px) and (max-width: 810px) {
     .btn-color {
         font-size: 0.8rem !important;
+    }
+
+    .paragraph {
+        font-size: 1rem !important;
+    }
+}
+
+@media (min-width: 811px) and (max-width: 1019px) {
+    .paragraph {
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (min-width: 1020px) {
+    .paragraph {
+        font-size: 1.3rem !important;
     }
 }
 
@@ -259,7 +372,6 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
     font-weight: bold !important;
     color: var(--color-primary);
-    font-size: 3.5rem;
 }
 
 .h1-header {
@@ -315,12 +427,20 @@ p {
 #about {
     background-color: var(--color-primary);
     position: relative; 
-    padding-top: 50; 
+    padding-top: 3px !important;
+    margin-top: 3px !important;
 }
 
 #about-h1 {
     color: var(--color-text-sec)  !important;
     text-align: center;
+}
+
+.icon-about span {
+    overflow: hidden;
+
+    color: white !important;
+    align-content: center;
 }
 
 /*----------------------------*/
@@ -461,6 +581,9 @@ p {
 /*----------------------------*/
 /*PLANS CARDS*/
 /*----------------------------*/
+#plans {
+    background-color: var(--color-background);
+}
 .plan-desc {
     color: var(--color-plan-value);
     font-weight: bold;
@@ -541,9 +664,12 @@ p {
     border-radius: 25px;
 }
 
-.card-plan:hover {
-    outline: 5px solid var(--color-primary-hover);
+@media (min-width: 768px) {
+    .card-plan:hover {
+        outline: 5px solid var(--color-primary-hover);
+    }
 }
+
 
 .card-shadow {
     box-shadow: 2px 2px 5px rgba(53, 53, 53, 0.5);
@@ -618,6 +744,11 @@ p {
 /*----------------------------*/
 /*WORKSHOPS SECTION*/
 /*----------------------------*/
+#workshops-h1 {
+    color: var(--color-text-sec) !important;
+    text-align: center;
+}
+
 #workshop {
     background-color: var(--color-primary);
     padding-bottom: 30px !important;
@@ -723,5 +854,3 @@ p {
 #alertMessage {
     color: #000000;
 }
-
-
