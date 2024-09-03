@@ -111,7 +111,7 @@ p {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 47px;
+    height: 49px;
 }
 
 .custom-curve-black .shape-fill {

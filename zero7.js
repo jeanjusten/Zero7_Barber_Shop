@@ -64,7 +64,7 @@ editPlanValue(primePlan, primePlanValue);
 
 //---------------------------------------------------------------------------------------//
 // #region WHATSAPP NUMBER API --------//
-const whatsappZ7 = "(42) 8848-5454";
+const whatsappZ7 = "55(42) 88485454";
 function whatsappAPI(buttonId, customMessage = "") {
     document.getElementById(buttonId).href = `https://wa.me/${whatsappZ7.replace(/\D/g, "")}${customMessage}`;
 };
@@ -83,26 +83,27 @@ const customMsgGold = `?&text=Olá.%20Tenho%20interesse%20no%20plano%20${planoGo
 const customMsgPrime = `?&text=Olá.%20Tenho%20interesse%20no%20plano%20${planoPrime}`;
 const customMsgContact = `?&text=Olá.%20Gostaria%20de%20agendar%20um%20horário.`;
 
+https://wa.me/554288485454?&text=Olá.%20Gostaria%20de%20agendar%20um%20horário.
 
 
 // Apply the custom API call to DOM
 // Home Page contact button
 //whatsappAPI("btn-schedule", customMsgContact);
 // Hair cut Button
-whatsappAPI("btn-haircut", customMsgHair);
+whatsappAPI("btn-haircut");
 // Beard cut Button
-whatsappAPI("btn-beard", customMsgBeard);
+whatsappAPI("btn-beard");
 // Black Plan contact Button
-whatsappAPI("btn-plano-black-sm", customMsgBlack);
+whatsappAPI("btn-plano-black-sm");
 whatsappAPI("btn-plano-black", customMsgBlack);
 // Gold Plan contact Button
-whatsappAPI("btn-plano-gold-sm", customMsgGold);
+whatsappAPI("btn-plano-gold-sm");
 whatsappAPI("btn-plano-gold", customMsgGold);
 // Prime Plan contact Button
-whatsappAPI("btn-plano-prime-sm", customMsgPrime);
+whatsappAPI("btn-plano-prime-sm");
 whatsappAPI("btn-plano-prime", customMsgPrime);
 // Workshop Button
-whatsappAPI("btn-workshop", customMsgWorkshop);
+whatsappAPI("btn-workshop");
 // Footer Whatsapp contact icon, with no custom message
 whatsappAPI("contact-whatsapp");
 
