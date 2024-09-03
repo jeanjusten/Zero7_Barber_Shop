@@ -76,6 +76,15 @@ p {
     background-color: transparent;
 }
 
+.green-curve-z::before {
+    content: "";
+    position: relative;
+    z-index: -2;
+    top: -46px;
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
 .green-curve {
     background-color: var(--color-background);
 }
