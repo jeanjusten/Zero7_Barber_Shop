@@ -79,7 +79,7 @@ p {
 .green-curve-z::before {
     content: "";
     position: relative;
-    z-index: -2;
+    z-index: 5;
     top: -46px;
     width: 100%;
     background-color: var(--color-primary);
@@ -315,6 +315,10 @@ p {
 /*----------------------------*/
 /*MAIN SECTION*/
 /*----------------------------*/
+#main-section {
+    background-color: var(--color-primary);
+}
+
 .main-logo {
     height: auto;
     max-height: 350px;
