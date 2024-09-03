@@ -113,6 +113,7 @@ p {
     display: block;
     width: calc(100% + 1.3px);
     height: 49px;
+    bottom: 1px;
 }
 
 .custom-curve-black .shape-fill {
