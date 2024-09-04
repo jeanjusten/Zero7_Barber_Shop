@@ -8,6 +8,10 @@
     <title>ZERO7 Barbearia</title>
     <link rel="stylesheet" href="Lib/bootstrap.min.css">
     <link rel="stylesheet" href="./zero7style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body class="vh-100" id="document-body">
@@ -60,7 +64,7 @@
     <section id="main-section">
         <div class="container-fluid container-img">
             <img src="./images/barber-4618697.jpg" draggable="false" class="full-width-img" alt="Pessoa cortando o cabelo">
-            <div class="text-overlay">
+            <div class="text-overlay" id="welcome-container-slide">
                 <h3 class="h1-header-prim mt-3">SEJA BEM-VINDO À</h3>
                 <img src="./images/zero7_logo_white.png" draggable="false" class="img-fluid main-logo">
                 <p id="p-main">Garanta seu corte com <strong>estilo</strong>.</p>
@@ -115,8 +119,8 @@
                 <button type="button" data-bs-target="#carousel-images" data-bs-slide-to="4"></button>
             </div>
         </div>
-        <div class="container d-block justify-content-center mt-3  mb-2">
-            <p class="text text-center paragraph">
+        <div class="container d-block justify-content-center mt-3 mb-2">
+            <p class="text text-center paragraph" id="about-container-slide">
                 <br>
                     Nós somos a Zero7 Barbearia. Atuamos em duas unidades em <strong>São Mateus do Sul-PR</strong>. Nós trabalhamos com técnicas atualizadas e 
                 produtos de qualidade para oferecer uma experiência única em cortes de cabelo e barba. <br><br>
@@ -146,8 +150,8 @@
         <h2 class="h2 mx-0 d-flex justify-content-center" id="services-h1">Nossos Serviços</h2>
         <div class="container">
             <div class="row d-lg-flex d-xl-flex mb-3 justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-5" >
-                    <article class="card card-plan pb-3 card-shadow">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                    <article class="card card-plan pb-3 card-shadow" id="services-slide-card1">
                         <header class="card-header card-header-top">
                             CABELO
                         </header>
@@ -171,8 +175,8 @@
                     </article>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-5" >
-                    <article class="card card-plan pb-3 card-shadow">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+                    <article class="card card-plan pb-3 card-shadow" id="services-slide-card2">
                         <header class="card-header card-header-top">
                             BARBA
                         </header>
@@ -217,7 +221,7 @@
                 </svg>
             </span>
         </div>
-        <div class="container d-block justify-content-center">
+        <div class="container d-block justify-content-center" id="team-container-slide">
             <h2 class="h2 mx-0 mt-0 d-flex justify-content-center" id="team-h1">Nossa Equipe</h2>
             <p class="text text-center paragraph">
                 Conheça os talentosos membros da equipe Zero7.
@@ -833,7 +837,7 @@
                 </svg>
             </span>
         </div>
-        <div class="container d-block justify-content-center">
+        <div class="container d-block justify-content-center" id="plans-container-slide">
             <h2 class="h2 mx-0 d-flex justify-content-center">Nossos Planos</h2>
             <p class="text text-center paragraph">
                 Conheça nossos planos de corte personalizados para manter-se sempre impecável.
@@ -841,7 +845,7 @@
             </p>
         </div>
         <!--PLANS CARDS - SMALL DEVICES-->
-        <div id="carouselExampleControls3" class="carousel slide d-lg-none d-xl-none">
+        <div id="carouselExampleControls3" class="carousel slide d-lg-none d-xl-none" id="plans-carousel-slide">
             <div class="carousel-inner mb-4">
                 <!--CARD 1-->
                 <div class="carousel-item active">
@@ -1025,7 +1029,7 @@
             </span>
         </div>
 
-        <div class="container d-block justify-content-center">
+        <div class="container d-block justify-content-center" id="workshop-container-slide">
             <h2 class="h2 mx-0 mt-0 d-flex justify-content-center" id="workshops-h1">Workshops</h2>
             <p class="text text-center paragraph">
                 A Zero7 também oferece Workshops para barbeiros. Com as 16 aulas do nosso curso você não aprenderá apenas tudo sobre cortes, 
@@ -1036,8 +1040,8 @@
 
         <div class="container">
             <div class="row d-lg-flex d-xl-flex mb-3 justify-content-center">
-                <div class="col-12 col-md-12 col-lg-12 mb-5"> <!-- Ajuste de colunas para diferentes tamanhos de tela -->
-                    <article class="card card-plan pb-3 card-shadow mx-auto" style="max-width: 480px;" id="card-workshop"> <!-- Definindo largura máxima -->
+                <div class="col-12 col-md-12 col-lg-12 mb-5"> 
+                    <article class="card card-plan pb-3 card-shadow mx-auto" style="max-width: 480px;" id="card-workshop"> 
                         <header class="card-header card-header-top text-center">
                             WORKSHOP ZERO7 
                         </header>
@@ -1170,6 +1174,9 @@
         </div>
     </footer>
 
+    <!--SCRIPTS-->
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./zero7.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="./Lib/bootstrap.bundle.min.js"></script>
