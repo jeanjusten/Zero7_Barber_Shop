@@ -145,7 +145,7 @@ class Barbeiro {
 // Easy access to team members personal pictures
 const img1 = "images/time/gabriel_p1.png";
 const img2 = "images/time/andre_p2.png";
-const img3 = "images/time/roberto_p3.png";
+const img3 = "";
 const img4 = "";
 const img5 = "";
 const img6 = "";
@@ -165,7 +165,7 @@ const img9 = "";
     );
     // Roberto
     const person3 = new Barbeiro(
-        "ROBERTO", "@roberto_przy", "-", "-", "-", img3,
+        "", "", "-", "-", "-", img3,
     );
     // 
     const person4 = new Barbeiro(
@@ -206,8 +206,8 @@ function alterDom (nameId, descriptionId, instagramId, facebookId, whatsappId, i
 // Bigger Screens
 alterDom ("person1", "person1-desc","person1-instagram","person1-facebook","person1-whatsapp", "person1-img", person1);
 alterDom ("person2", "person2-desc","person2-instagram","person2-facebook","person2-whatsapp", "person2-img", person2);
-alterDom ("person3", "person3-desc","person3-instagram","person3-facebook","person3-whatsapp", "person3-img", person3);
 /*
+alterDom ("person3", "person3-desc","person3-instagram","person3-facebook","person3-whatsapp", "person3-img", person3);
 alterDom ("person4", "person4-desc","person4-instagram","person4-facebook","person4-whatsapp", "person4-img", person4);
 alterDom ("person5", "person5-desc","person5-instagram","person5-facebook","person5-whatsapp", "person5-img", person5);
 alterDom ("person6", "person6-desc","person6-instagram","person6-facebook","person6-whatsapp", "person6-img", person6);
@@ -219,8 +219,8 @@ alterDom ("person9", "person9-desc","person9-instagram","person9-facebook","pers
 // Smaller Devices
 alterDom ("person1sm", "person1sm-desc","person1sm-instagram","person1sm-facebook","person1sm-whatsapp", "person1sm-img", person1);
 alterDom ("person2sm", "person2sm-desc","person2sm-instagram","person2sm-facebook","person2sm-whatsapp", "person2sm-img", person2);
-alterDom ("person3sm", "person3sm-desc","person3sm-instagram","person3sm-facebook","person3sm-whatsapp", "person3sm-img", person3);
 /*
+alterDom ("person3sm", "person3sm-desc","person3sm-instagram","person3sm-facebook","person3sm-whatsapp", "person3sm-img", person3);
 alterDom ("person4sm", "person4sm-desc","person4sm-instagram","person4sm-facebook","person4sm-whatsapp", "person4sm-img", person4);
 alterDom ("person5sm", "person5sm-desc","person5sm-instagram","person5sm-facebook","person5sm-whatsapp", "person5sm-img", person5);
 alterDom ("person6sm", "person6sm-desc","person6sm-instagram","person6sm-facebook","person6sm-whatsapp", "person6sm-img", person6);

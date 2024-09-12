@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
-<body class="vh-100" id="document-body">
+<body  data-bs-spy="scroll" data-bs-target="#navbar" class="vh-100" id="document-body">
     <!--HOME ANCHOR-->
     <div id="home"></div>
     <!--CUSTOM ALERT BOX-->
@@ -61,14 +61,15 @@
     </nav>
 
     <!--MAIN SECTION-->
-    <section id="main-section">
-        <div class="container-fluid container-img">
-            <img src="./images/barber-4618697.jpg" draggable="false" class="full-width-img" alt="Pessoa cortando o cabelo">
-            <div class="text-overlay" id="welcome-container-slide">
-                <h3 class="h1-header-prim mt-3">SEJA BEM-VINDO À</h3>
-                <img src="./images/zero7_logo_white.png" draggable="false" class="img-fluid main-logo">
-                <p id="p-main">Garanta seu corte com <strong>estilo</strong>.</p>
-                <!--<a href="#more-info" class="btn btn-primary btn-color border-0 btn-lg rounded-pill" id="btn-schedule">Agendar</a>-->
+    <section>
+        <div id="hero-carousel" class="carousel slide" data-bs-ride="">
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item main-carousel">
+                <img src="./images/barber-4618697.jpg" draggable="false" alt="Pessoa cortando o cabelo" class="d-block w-100 c-img" alt="Slide 1">
+                <div class="carousel-caption top-0 mt-4">
+                    <img src="./images/zero7_logo_white.png" draggable="false" class="img-logo-main">
+                </div>
+            </div>
             </div>
         </div>
         <!--Curved Section-->
@@ -80,7 +81,7 @@
             </div>
         </section>
     </section>
-
+    
     <!--ABOUT SECTION-->
     <section id="about">
         <!--Section Icon-->
@@ -92,7 +93,8 @@
                 </svg>
             </span>
         </div>
-        <h2 class="h2 mx-0 mt-0 d-flex justify-content-center" id="about-h1">Sobre a Zero7</h2>
+        <h2 class="h2 mb-0 mx-0 mt-0 d-flex justify-content-center" id="about-h1">Sobre a Zero7</h2>
+        
         <div id="carousel-images" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-inner" id="carousel-about">
                 <div data-bs-interval="4500" class="carousel-item active">
@@ -120,11 +122,13 @@
             </div>
         </div>
         <div class="container d-block justify-content-center mt-3 mb-2">
-            <p class="text text-center paragraph" id="about-container-slide">
-                <br>
+            <h3 class="text text-center paragrap">Onde cada fio conta, cliente a cliente, fazemos a diferença.</h3>
+            <p class="text text-left paragraph" id="about-container-slide">
                     Nós somos a Zero7 Barbearia. Atuamos em duas unidades em <strong>São Mateus do Sul-PR</strong>. Nós trabalhamos com técnicas atualizadas e 
                 produtos de qualidade para oferecer uma experiência única em cortes de cabelo e barba. <br><br>
-                    Nosso objetivo é garantir que cada cliente saia não apenas com um visual impecável, mas também com a confiança renovada.
+                    A organização é a base para oferecer um serviço meticuloso e de alta qualidade, que é
+                essencial para fazer com que "cada fio conte". Nós mantemos nosso ambiente de trabalho limpo e ordenado para garantir que cada cliente
+                tenha uma experiência agradável e acolhedora.
             </p>
         </div>
     </section>
@@ -228,7 +232,7 @@
             </p>
         </div>
         <!--CARDS CAROUSEL - LARGE AND MED. DEVICES-->
-        <div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-bs-ride=""> <!--Change data-ride="carousel" when more than 1 set for autoplay-->
             <div class="carousel-inner" id="carousel-inner">
                 <!--1ST SET-->
                 <!--Person1-->
@@ -294,7 +298,7 @@
                             </div>
                         </div>
                         <!--Person3-->
-                        <div class="cards-wrapper">
+                        <div class="cards-wrapper d-none"> <!--CHANGE THE D-NONE WHEN THE 3rd MEMBER IS ADDED-->
                             <div class="card border-3" style="width: 300px;" id="card-sect">
                                 <img src="https://via.placeholder.com/100x100" id="person3-img">
                                 <div class="card-img-overlay">
@@ -319,7 +323,7 @@
                                     </section>
                                 </div>
                                 <div class="card-body card-name d-block text-center">
-                                    <h4 class="card-title" id="person3">.</h4>
+                                    <h4 class="card-title" id="person3"> </h4>
                                     <!--<h5 class="card-subtitle" id="person3-desc">.</h5>-->
                                 </div>
                             </div>
@@ -521,12 +525,12 @@
             </div>
             <div class="carousel-indicators">
                 <button type="button" class="active" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"></button>
-                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></button>
+                <!-- <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></button> -->
             </div>
         </div>
         <!--CARDS CAROUSEL - SMALL DEVICES-->
-        <div id="carouselExampleControls2" class="carousel slide d-sm-none" data-ride="carousel">
+        <div id="carouselExampleControls2" class="carousel slide d-sm-none" data-ride=""> <!--Change data-ride="carousel" when more than 1 set for autoplay-->
             <div class="carousel-inner">
                 <!--FIRST SET-->
                 <!--Person1-->
@@ -839,7 +843,7 @@
         </div>
         <div class="container d-block justify-content-center" id="plans-container-slide">
             <h2 class="h2 mx-0 d-flex justify-content-center">Nossos Planos</h2>
-            <p class="text text-center paragraph">
+            <p class="text text-left paragraph">
                 Conheça nossos planos de corte personalizados para manter-se sempre impecável.
                 Escolha o plano que melhor se adapta ao seu estilo e aproveite da praticidade que oferecemos.
             </p>
@@ -1031,7 +1035,7 @@
 
         <div class="container d-block justify-content-center" id="workshop-container-slide">
             <h2 class="h2 mx-0 mt-0 d-flex justify-content-center" id="workshops-h1">Workshops</h2>
-            <p class="text text-center paragraph">
+            <p class="text text-left paragraph">
                 A Zero7 também oferece Workshops para barbeiros. Com as 16 aulas do nosso curso você não aprenderá apenas tudo sobre cortes, 
                 mas também sobre como manejar seu set de máquinas, fidelizar clientes, abordagem e atendimento e muito mais! 
                 Clique em "Saiba mais", e saia pronto para o mercado de trabalho.

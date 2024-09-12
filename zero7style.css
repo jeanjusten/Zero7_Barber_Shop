@@ -30,7 +30,7 @@
     scrollbar-width: thin; 
     scrollbar-color: var(--color-scroll) var(--color-scroll-bg);
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
+    scroll-padding-top: 75px;
 }
 
 /*----------------------------*/
@@ -45,7 +45,7 @@ h5 {
 }
 
 p {
-    font-family: "Barlow", sans-serif;
+    font-family: "Barlow", sans-serif !important;
     font-weight: 400;
     font-style: normal;
 }
@@ -54,6 +54,7 @@ h3, h2 {
     font-family: "Bebas Neue", sans-serif !important;
     font-weight: 400;
     font-style: normal;
+    overflow: hidden;
 }
 
 /*----------------------------*/
@@ -320,39 +321,73 @@ h3, h2 {
     }
 }
 
+@media (min-width: 1px) and (max-width: 379px) {
+    .img-logo-main {
+        max-height: 110px !important;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 500px) {
+    .img-logo-main {
+        max-height: 160px !important;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .img-logo-main {
+        max-height: 210px !important;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 720px) {
+    .img-logo-main {
+        max-height: 230px !important;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 820px) {
+    .img-logo-main {
+        max-height: 240px !important;
+    }
+}
 /*----------------------------*/
 /*MAIN SECTION*/
 /*----------------------------*/
+#p-main {
+    font-weight: 600;
+}
+
+.c-item {
+    height: calc(100svh - 56px) !important;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.img-logo-main {
+    margin: 0 auto;
+    position: absolute;
+    transform: translate(-45%, -60%) !important;
+    max-height: 350px;
+    z-index: 10 !important;
+}
+
+.carousel-txt {
+    z-index: 2 !important;
+}
+
+.carousel-caption  {
+    align-content: center;
+}
+
 #main-section {
     background-color: var(--color-primary);
 }
 
-.main-logo {
-    height: auto;
-    max-height: 350px;
-}
-
-.text {
-    color: var(--color-text) !important;
-}
-
-.container-fluid {
-    max-height: 100vh;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    position: relative;
-}
-
-.container-img {
-    max-height: calc(100vh - 72px);
-}
-
-.container-fluid {
-    margin: 0 auto;
-}
-
-.container-img::before {
+.main-carousel::before {
     content: ''; 
     position: absolute; 
     top: 0;
@@ -362,32 +397,6 @@ h3, h2 {
     background: rgba(0, 0, 0, 0.65); 
     pointer-events: none; 
     z-index: 2 !important; 
-}
-
-.full-width-img {
-    width: 100%;
-    height: auto; 
-    display: block; 
-    object-fit: cover;
-    position: relative; 
-    z-index: 1 !important; 
-    filter:saturate(0%);
-}
-
-.text-overlay {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -54%); 
-    color: white; 
-    text-align: center;
-    padding: 20px; 
-    z-index: 2;
-}
-
-.text-overlay p {
-    font-size: 1.2rem; 
-    margin-top: 6px;
 }
 
 .h2 {
@@ -429,6 +438,10 @@ h3, h2 {
 /*----------------------------*/
 /*ABOUT SECTION CAROUSEL*/
 /*----------------------------*/
+.text {
+    color: var(--color-text) !important;
+}
+
 #carousel-about::before {
     content: ''; 
     position: absolute; 
@@ -442,7 +455,7 @@ h3, h2 {
 }
 
 #carousel-about div img {
-    filter: blur(1px) grayscale(100%) !important;
+    filter: blur(1px) !important;
 }
 
 #about {
@@ -457,7 +470,6 @@ h3, h2 {
 
 .icon-about span {
     overflow: hidden;
-
     color: white !important;
     align-content: center;
 }
