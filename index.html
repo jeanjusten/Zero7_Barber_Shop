@@ -26,50 +26,49 @@
     </div>
 
     <!--NAVBAR SECTION-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top navbar-color" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand mx-5" href="#">
-                <!--Navbar Logo-->
-                <img src="./images/z7_logo_white.png" draggable="false" alt="" id="nav-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" id="nav-icon-toggle"></span>
-            </button>
-            <div class="collapse navbar-collapse mx-auto text-start" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-links">
-                    <li class="nav-item px-1">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#about">Sobre</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#services">Serviços</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#team">Equipe</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#plans">Planos</a>
-                    </li>
-                    <li class="nav-item px-1">
-                        <a class="nav-link" href="#workshop">Cursos</a>
-                    </li>
-                </ul>
+    <header id="header-nav">
+        <div class="navbar navbar-dark navbar-expand-lg">
+            <div class="container">
+                <img src="./images/z7_logo_white.png" id="claw-logo" draggable="false">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-dropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu-dropdown">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#team" class="nav-link">Equipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#plans" class="nav-link">Planos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#workshop" class="nav-link">Workshops</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </nav>
+    </header>
 
     <!--MAIN SECTION-->
     <section>
         <div id="hero-carousel" class="carousel slide" data-bs-ride="">
-        <div class="carousel-inner">
-            <div class="carousel-item active c-item main-carousel">
-                <img src="./images/barber-4618697.jpg" draggable="false" alt="Pessoa cortando o cabelo" class="d-block w-100 c-img" alt="Slide 1">
-                <div class="carousel-caption top-0 mt-4">
-                    <img src="./images/zero7_logo_white.png" draggable="false" class="img-logo-main">
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item main-carousel">
+                    <img src="./images/barber-4618697.jpg" draggable="false" alt="Pessoa cortando o cabelo" class="d-block w-100 c-img" alt="Slide 1">
+                    <div class="carousel-caption top-0 mt-4">
+                        <img src="./images/zero7_logo_white.png" draggable="false" class="img-logo-main">
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
         <!--Curved Section-->

@@ -30,7 +30,7 @@
     scrollbar-width: thin; 
     scrollbar-color: var(--color-scroll) var(--color-scroll-bg);
     scroll-behavior: smooth;
-    scroll-padding-top: 75px;
+    scroll-padding-top: 60px;
 }
 
 /*----------------------------*/
@@ -61,6 +61,7 @@ h3, h2 {
 /*SCROLLBAR*/
 /*----------------------------*/
 ::-webkit-scrollbar {
+    z-index: 100 !important;
     width: 12px; 
 }
 
@@ -157,24 +158,55 @@ h3, h2 {
 /*----------------------------*/
 /*NAVBAR*/
 /*----------------------------*/
-#navbar {
+#header-nav{
     z-index: 99 !important;
-    position: sticky;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.75) !important; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-background) ;
 }
 
-#navbar a{
+#header-nav > * {
+    font-family: "Barlow", sans-serif !important;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar {
+    z-index: 100 !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+}
+
+#claw-logo {
+    max-height: 40px;
+}
+
+.nav-item a {
+    color: var(--color-text);
+}
+
+.nav-link.active {
     font-weight: bold;
-    transition: 0.5s ease-in-out;
+    background-color: transparent !important;
+    color:var(--color-primary) !important;
 }
 
-#navbar a:hover {
+.nav-link:hover {
     color: var(--color-primary-hover) !important;
-    transition: 0.5s ease-in-out;
 }
 
-#nav-logo {
-    max-height: 35px;
+.nav-link {
+    text-align: center;
+}
+
+.nav-tabs button {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.tab-content {
+    color: var(--color-text);
 }
 
 /*Navbar Toggler*/
@@ -358,7 +390,7 @@ h3, h2 {
 }
 
 .c-item {
-    height: calc(100svh - 56px) !important;
+    height: calc(100svh) !important;
 }
 
 .c-img {
