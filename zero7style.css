@@ -30,7 +30,7 @@
     scrollbar-width: thin; 
     scrollbar-color: var(--color-scroll) var(--color-scroll-bg);
     scroll-behavior: smooth;
-    scroll-padding-top: 60px;
+    scroll-padding-top: 76px;
 }
 
 /*----------------------------*/
@@ -164,13 +164,13 @@ h3, h2 {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--color-background) ;
+    background-color: var(--color-background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
 #header-nav > * {
     font-family: "Barlow", sans-serif !important;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 800;
 }
 
 .navbar {
@@ -178,7 +178,7 @@ h3, h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
 }
 
-#claw-logo {
+#navbar-logo {
     max-height: 40px;
 }
 
@@ -194,6 +194,7 @@ h3, h2 {
 
 .nav-link:hover {
     color: var(--color-primary-hover) !important;
+    font-weight: 800 !important;
 }
 
 .nav-link {
