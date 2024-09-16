@@ -30,7 +30,7 @@
     scrollbar-width: thin; 
     scrollbar-color: var(--color-scroll) var(--color-scroll-bg);
     scroll-behavior: smooth;
-    scroll-padding-top: 76px;
+    scroll-padding-top: 78px;
 }
 
 /*----------------------------*/
