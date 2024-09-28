@@ -385,6 +385,11 @@ h3, h2 {
 /*----------------------------*/
 /*MAIN SECTION*/
 /*----------------------------*/
+#main-section {
+    display: flex;
+    flex-direction: column;
+}
+
 #p-main {
     font-weight: 600;
 }
