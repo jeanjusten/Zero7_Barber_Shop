@@ -390,7 +390,7 @@ h3, h2 {
 }
 
 .c-item {
-    height: calc(100svh) !important;
+    height: calc(100vh) !important;
 }
 
 .c-img {
