@@ -36,6 +36,7 @@
 /*----------------------------*/
 /*GENERAL SETUP*/
 /*----------------------------*/
+
 body {
     background-color: var(--color-primary) !important;
 }
@@ -202,13 +203,14 @@ h3, h2 {
 /*NAVBAR*/
 /*----------------------------*/
 header {
-    z-index: 999 !important;
+    z-index: 50;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     background-color: var(--color-body);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -445,20 +447,6 @@ header {
     background-color: var(--color-primary-hover) !important;
 }
 
-.carousel-caption h1,
-.carousel-second,
-.carousel-third  {
-    transition: 0.5s ease-in-out;
-}
-
-.carousel-caption h1:hover,
-.carousel-second:hover,
-.carousel-third:hover {
-    color: var(--color-primary) !important;
-    cursor: default;
-    transition: 0.5s ease-in-out;
-}
-
 .c-item {
     height: calc(100svh - 56px);
 }
@@ -493,7 +481,7 @@ header {
 }
 
 .carousel-caption {
-    z-index: 2; /* Garante que o texto fique acima da sobreposição */
+    z-index: 2;
 }
 
 /*----------------------------*/
