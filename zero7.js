@@ -1,4 +1,19 @@
 //---------------------------------------------------------------------------------------//
+//#region Page Loader - Fade out when Fully Loaded
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader")
+    loader.classList.add("loader--hidden");
+
+    document.body.removeChild(document.body.firstChild);
+})
+
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    loader.classList.add('loader--hidden');
+});
+//#endregion
+
+
 // #region NAVBAR ACTIVE CLASS TOGGLE --------//
 document.addEventListener("DOMContentLoaded", function () {
     // Seleciona todos os links de navegação
@@ -100,12 +115,9 @@ const customMsgGold = `?&text=Olá.%20Tenho%20interesse%20no%20plano%20${planoGo
 const customMsgPrime = `?&text=Olá.%20Tenho%20interesse%20no%20plano%20${planoPrime}`;
 const customMsgContact = `?&text=Olá.%20Gostaria%20de%20agendar%20um%20horário.`;
 
-https://wa.me/554288485454?&text=Olá.%20Gostaria%20de%20agendar%20um%20horário.
-
-
 // Apply the custom API call to DOM
 // Home Page contact button
-//whatsappAPI("btn-schedule", customMsgContact);
+whatsappAPI("btn-hero-schedule");
 // Hair cut Button
 whatsappAPI("btn-haircut");
 // Beard cut Button
@@ -143,8 +155,8 @@ class Barbeiro {
 }
 
 // Easy access to team members personal pictures
-const img1 = "images/time/gabriel_p1.png";
-const img2 = "images/time/andre_p2.png";
+const img1 = "images/time/gabriel_p1.webp";
+const img2 = "images/time/andre_p2.webp";
 const img3 = "";
 const img4 = "";
 const img5 = "";
